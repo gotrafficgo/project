@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Project 1 | gotrafficgo</title>
+  <meta
+    name="description"
+    content="Project page for Project 1, including an overview, visual results, animations, and related publications."
+  />
+
+  <style>
+    :root {
+      --text: #222;
+      --muted: #666;
+      --background: #f7f7f7;
+      --card: #ffffff;
+      --border: #eaeaea;
+      --link: #0969da;
+      --shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--background);
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    header {
+      margin-bottom: 36px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--link);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      line-height: 1.2;
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0;
+    }
+
+    section {
+      background: var(--card);
+      padding: 28px;
+      margin-bottom: 24px;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .links {
+      margin-top: 18px;
+    }
+
+    .links a,
+    .paper-links a {
+      display: inline-block;
+      margin-right: 14px;
+      margin-bottom: 8px;
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover,
+    .paper-links a:hover {
+      text-decoration: underline;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    .media-grid img,
+    .media-grid video {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #fafafa;
+      display: block;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .paper {
+      margin-bottom: 20px;
+    }
+
+    .paper:last-child {
+      margin-bottom: 0;
+    }
+
+    .paper-title {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .paper-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      margin-top: 36px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 32px 16px;
+      }
+
+      section {
+        padding: 22px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <a class="back-link" href="../">← Back to project list</a>
+
+      <h1>Project 1: Your Project Title</h1>
+
+      <p class="subtitle">
+        A brief one-sentence summary of the project, highlighting the main idea,
+        contribution, or application.
+      </p>
+    </header>
+
+    <section>
+      <h2>Project Overview</h2>
+
+      <p>
+        This project investigates [briefly describe the research problem]. We propose
+        [briefly describe your method, system, or framework], which aims to improve
+        [performance, efficiency, interpretability, robustness, safety, or another
+        relevant objective].
+      </p>
+
+      <p>
+        The project includes experimental results, visual demonstrations, and related
+        publications. This section can describe the motivation, method, datasets,
+        key findings, and practical implications.
+      </p>
+
+      <div class="links">
+        <a href="#">GitHub</a>
+        <a href="#">Demo</a>
+        <a href="#">Dataset</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Images and Animations</h2>
+
+      <div class="media-grid">
+        <figure>
+          <img src="images/demo1.png" alt="Overview of Project 1" />
+          <figcaption>
+            Figure 1. Short caption describing the image or result.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video controls>
+            <source src="videos/demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>
+            Animation 1. Short caption describing the animation or demo.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+
+      <div class="paper">
+        <div class="paper-title">
+          Paper Title One
+        </div>
+        <div class="paper-meta">
+          Author A, Author B, Author C · Conference / Journal · 2026
+        </div>
+        <div class="paper-links">
+          <a href="#">PDF</a>
+          <a href="#">Code</a>
+          <a href="#">Project Page</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          Paper Title Two
+        </div>
+        <div class="paper-meta">
+          Author A, Author B · arXiv · 2025
+        </div>
+        <div class="paper-links">
+          <a href="#">PDF</a>
+          <a href="#">Code</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 gotrafficgo
+    </footer>
+  </main>
+</body>
+</html>
