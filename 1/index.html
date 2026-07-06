@@ -34,7 +34,7 @@
     }
 
     .container {
-      max-width: 920px;
+      max-width: 1440px;
       margin: 0 auto;
       padding: 48px 20px;
     }
@@ -80,23 +80,31 @@
       margin-top: 0;
     }
 
+    .emphasis {
+      color: #8b0000;
+    }
+
+    .citation-link {
+      color: #5aa9e6;
+    }
+
     .media-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
     }
 
     figure {
       margin: 0;
     }
 
-    .media-grid img,
-    .media-grid video {
+    .media-grid img {
       width: 100%;
       border-radius: 10px;
       border: 1px solid var(--border);
-      background: #fafafa;
+      background: #fff;
       display: block;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     }
 
     figcaption {
@@ -163,6 +171,10 @@
       h1 {
         font-size: 1.9rem;
       }
+
+      .media-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -175,50 +187,87 @@
     </header>
 
     <section>
-      <h2>Project Overview</h2>
+      <h2>Overview</h2>
 
       <p>
-        Car-following and lane-changing models are cornerstones for understanding driver behavior,
+        Car-following and lane-changing models are <strong class="emphasis">cornerstones</strong> for understanding driver behavior,
         traffic dynamics, and supporting autonomous driving.
       </p>
 
       <p>
         As early as 2014, at the dawn of the deep learning era, my team proposed an innovative
-        kNN-based data-driven car-following model. This model has been cited almost 200 times,
-        and it is widely recognized as one of the first data-driven car-following models by review
-        articles published by scholars from institutions such as the University of California,
-        Berkeley (Zhang et al., 2025), the University of Washington (Chen et al., 2023), and
-        Imperial College London (Rowam et al., 2025).
+        kNN-based data-driven car-following model. This model has been <strong class="emphasis">cited more than 200 times</strong>,
+        and it is widely recognized as one of <strong class="emphasis">the first AI-driven car-following models</strong>
+        by review articles published by scholars from institutions such as
+        the University of California, Berkeley (<a class="citation-link" href="https://ieeexplore.ieee.org/document/10547481">Zhang et al., 2025</a>),
+        the University of Washington (<a class="citation-link" href="https://www.nature.com/articles/s41597-023-02718-7">Chen et al., 2023</a>),
+        Imperial College London (<a class="citation-link" href="https://doi.org/10.1016/j.commtr.2025.100164">Rowam et al., 2025</a>),
+        Tshinghua Univeristy (<a class="citation-link" href="https://doi.org/10.1016/j.trc.2026.105840">Xie et al., 2026</a>)
       </p>
 
       <p>
-        In 2019, my team developed the first deep-learning-based lane-changing model using DBN
-        and LSTM neural networks, which has since been cited over 300 times and is widely recognized
-        in subsequent research (Siebke et al., 2023; Han et al., 2024; Wang et al., 2024;
-        Huang et al., 2025) as a pioneering contribution to AI-driven modeling of driver behavior
+        In 2019, my team developed <strong class="emphasis">the first deep-learning-based lane-changing model</strong> using DBN
+        and LSTM neural networks, which has since been <strong class="emphasis">cited over 300 times</strong> and is widely recognized
+        in subsequent research (<a class="citation-link" href="https://ieeexplore.ieee.org/document/9954276">Siebke et al., 2023</a>;
+        <a class="citation-link" href="https://doi.org/10.1016/j.trc.2024.104841">Han et al., 2024</a>;
+        <a class="citation-link" href="https://ieeexplore.ieee.org/document/10321740">Wang et al., 2024</a>;
+        <a class="citation-link" href="https://ieeexplore.ieee.org/document/10855350">Huang et al., 2025</a>
+        ) as a pioneering contribution to AI-driven modeling of driver behavior
         and traffic dynamics.
       </p>
     </section>
 
     <section>
-      <h2>Images and Animations</h2>
+      <h2>Slides</h2>
 
       <div class="media-grid">
         <figure>
-          <img src="images/demo1.png" alt="Overview of AI-driven traffic flow modeling" />
-          <figcaption>
-            Figure 1. Short caption describing the image or result.
-          </figcaption>
+          <img src="images/he-monash/page-01.png" alt="Project presentation slide 1" />
         </figure>
-
         <figure>
-          <video controls>
-            <source src="videos/demo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <figcaption>
-            Animation 1. Short caption describing the animation or demo.
-          </figcaption>
+          <img src="images/he-monash/page-02.png" alt="Project presentation slide 2" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-03.png" alt="Project presentation slide 3" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-04.png" alt="Project presentation slide 4" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-05.png" alt="Project presentation slide 5" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-06.png" alt="Project presentation slide 6" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-07.png" alt="Project presentation slide 7" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-08.png" alt="Project presentation slide 8" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-09.png" alt="Project presentation slide 9" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-10.png" alt="Project presentation slide 10" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-11.png" alt="Project presentation slide 11" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-12.png" alt="Project presentation slide 12" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-13.png" alt="Project presentation slide 13" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-14.png" alt="Project presentation slide 14" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-15.png" alt="Project presentation slide 15" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="images/he-monash/page-16.png" alt="Project presentation slide 16" loading="lazy" />
         </figure>
       </div>
     </section>
