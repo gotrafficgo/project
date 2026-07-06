@@ -93,6 +93,33 @@
       font-size: 0.75em;
     }
 
+    .work-list {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    .work-list li {
+      margin-bottom: 10px;
+    }
+
+    .work-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .overview-highlight {
+      width: 80%;
+      margin: 20px auto 22px;
+    }
+
+    .overview-highlight img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
     .media-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -243,22 +270,35 @@
       Therefore, microscopic models provide a critical foundation for explaining how individual driving mechanisms shape aggregate traffic dynamics.
       </p>
 
+      <figure class="overview-highlight">
+        <img src="images/highlight.png" alt="Overview highlight of microscopic traffic flow modeling studies" />
+      </figure>
+
       <p>
       <strong class="emphasis">Together, my team’s studies form a coherent progression from perception-based and heterogeneous driving mechanisms, 
       to maneuver-induced disturbance quantification, stochastic behavioral modeling, and macro-level traffic flow representations grounded in microscopic behavior.</strong>
-      In our early work, we proposed a visual imaging car-following model, showing that drivers’ visual perception of the preceding vehicle can better explain following behavior and traffic stability, 
-      especially under different vehicle-type conditions<sup class="citation-sup"><strong>[5]</strong></sup>. 
-      We then further examined vehicle-type-dependent car-following heterogeneity from both microscopic safety indicators and macroscopic Lagrangian fundamental diagrams, 
-      demonstrating that larger vehicles lead drivers to maintain lower-risk and larger-spacing behavior<sup class="citation-sup"><strong>[4]</strong></sup>. 
-      To connect microscopic behavior with aggregate traffic flow characteristics, we developed a flexible traffic stream model that links driving parameters, 
-      including reaction time, calmness, and sensitivity, with macroscopic fundamental diagrams and shockwave dynamics<sup class="citation-sup"><strong>[3]</strong></sup>.
-      We also derived an anisotropic continuum model from car-following behavior and showed its capability to reproduce real congestion waves<sup class="citation-sup"><strong>[6]</strong></sup>. 
-      Extending the focus from car-following to lane-changing, we quantified the temporal and spatial impact of a single discretionary lane change, 
-      finding that it typically affects four or five surrounding vehicles for about 12–13 seconds<sup class="citation-sup"><strong>[1]</strong></sup>. 
-      More recently, our work has incorporated stochasticity, driver heterogeneity, 
-      and time-varying behavioral regimes into Bayesian car-following models, 
-      showing that stochastic multi-regime representations can better reproduce human driving dynamics than deterministic models<sup class="citation-sup"><strong>[2]</strong></sup>.
       </p>
+
+      <ul class="work-list">
+        <li>
+          In our early work, we proposed a visual imaging car-following model, showing that drivers’ visual perception of the preceding vehicle can better explain following behavior and traffic stability, especially under different vehicle-type conditions<sup class="citation-sup"><strong>[5]</strong></sup>.
+        </li>
+        <li>
+          We then further examined vehicle-type-dependent car-following heterogeneity from both microscopic safety indicators and macroscopic Lagrangian fundamental diagrams, demonstrating that larger vehicles lead drivers to maintain lower-risk and larger-spacing behavior<sup class="citation-sup"><strong>[4]</strong></sup>.
+        </li>
+        <li>
+          To connect microscopic behavior with aggregate traffic flow characteristics, we developed a flexible traffic stream model that links driving parameters, including reaction time, calmness, and sensitivity, with macroscopic fundamental diagrams and shockwave dynamics<sup class="citation-sup"><strong>[3]</strong></sup>.
+        </li>
+        <li>
+          We also derived an anisotropic continuum model from car-following behavior and showed its capability to reproduce real congestion waves<sup class="citation-sup"><strong>[6]</strong></sup>.
+        </li>
+        <li>
+          Extending the focus from car-following to lane-changing, we quantified the temporal and spatial impact of a single discretionary lane change, finding that it typically affects 4 surrounding vehicles for about 12 seconds<sup class="citation-sup"><strong>[1]</strong></sup>.
+        </li>
+        <li>
+          More recently, our work has incorporated stochasticity, driver heterogeneity, and time-varying behavioral regimes into Bayesian car-following models, showing that stochastic multi-regime representations can better reproduce human driving dynamics than deterministic models<sup class="citation-sup"><strong>[2]</strong></sup>.
+        </li>
+      </ul>
     </section>
 
     <section>
