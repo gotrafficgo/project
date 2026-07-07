@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Resolving Traffic Congestion by Dispatching Dedicated Vehicles | Zhengbing He</title>
+  <meta
+    name="description"
+    content="Project page for Zhengbing He's work on jam-absorption driving, using dedicated vehicles to suppress stop-and-go traffic waves, with real-world observation videos, overview, and related publications."
+  />
+
+  <style>
+    :root {
+      --text: #222;
+      --muted: #666;
+      --background: #f7f7f7;
+      --card: #ffffff;
+      --border: #eaeaea;
+      --link: #0969da;
+      --shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--background);
+    }
+
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    header {
+      margin-bottom: 36px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--link);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    section {
+      background: var(--card);
+      padding: 28px;
+      margin-bottom: 24px;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .emphasis {
+      color: #8b0000;
+    }
+
+    .citation-link {
+      color: #5aa9e6;
+    }
+
+    .citation-sup {
+      line-height: 0;
+      font-size: 0.75em;
+    }
+
+    .work-list {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    .work-list li {
+      margin-bottom: 10px;
+    }
+
+    .work-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .overview-highlight {
+      width: 80%;
+      margin: 20px auto 22px;
+    }
+
+    .overview-highlight img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    .media-grid img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #fff;
+      display: block;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    figcaption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .featured-paper {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
+      gap: 24px;
+      align-items: center;
+    }
+
+    .featured-paper figure {
+      margin: 0;
+      height: 160px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .featured-paper img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+
+    .featured-paper-content {
+      min-width: 0;
+    }
+
+    .paper {
+      margin-bottom: 20px;
+    }
+
+    .paper:last-child {
+      margin-bottom: 0;
+    }
+
+    .paper-title {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .paper-index {
+      color: var(--muted);
+      font-weight: 700;
+      margin-right: 6px;
+    }
+
+    .paper-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    .paper-links a,
+    .paper-links button {
+      display: inline-block;
+      margin-right: 14px;
+      margin-bottom: 8px;
+      color: var(--link);
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .paper-links a:hover,
+    .paper-links button:hover {
+      text-decoration: underline;
+    }
+
+    .heading-links {
+      margin-left: 10px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .heading-links a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .heading-links a:hover {
+      text-decoration: underline;
+    }
+
+    .feature-video {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      margin-top: 36px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 32px 16px;
+      }
+
+      section {
+        padding: 22px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      .media-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-paper {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-paper figure {
+        height: 180px;
+      }
+
+      .feature-video {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <a class="back-link" href="https://www.GoTrafficGo.com">← Back to main page</a>
+      <h1>Resolving Traffic Congestion by Dispatching Dedicated Vehicles</h1>
+    </header>
+
+    <section>
+      <h2>Overview</h2>
+
+      <p>
+      Jam-absorption driving (JAD) is a targeted traffic-control strategy for suppressing stop-and-go waves on freeways. 
+      Instead of relying on fixed roadside infrastructure, JAD uses a dedicated vehicle inside the traffic stream to perform 
+      a carefully timed slow-in and fast-out maneuver before it reaches a moving jam. By temporarily reducing the inflow into 
+      the wave, the dedicated vehicle can help the jam shrink and disappear while allowing downstream traffic to recover.
+      </p>
+
+      <figure class="overview-highlight">
+        <img src="images/highlight.png" alt="Overview highlight of jam-absorption driving studies" />
+      </figure>
+
+      <p>
+      My series of studies pioneers the field of JAD-based traffic congestion mitigation.
+      </p>
+
+      <ul class="work-list">
+        <li>
+          In 2017, we proposed one of <strong class="emphasis">the first JAD strategies</strong> for mitigating traffic oscillations, showing how a dedicated vehicle can regulate its speed to absorb moving jams and reduce multiple traffic waves<sup class="citation-sup"><strong>[1]</strong></sup>.
+        </li>  
+        <li>
+          We <strong class="emphasis">reviewed stop-and-go traffic wave suppression strategies</strong> by comparing variable speed limits (VSL) and JAD, clarifying their shared logic, complementary strengths, and open research opportunities<sup class="citation-sup"><strong>[2]</strong></sup>.
+        </li>
+        <li>
+          The above careful review shows that existing JAD strategies are often overly idealized and depend on strong assumptions. 
+          To address this limitation, we propose <strong class="emphasis">a more practice-oriented JAD strategy</strong> that translates real-world police-car swerving behavior (Video Below) into the design of JAD vehicles<sup class="citation-sup"><strong>[3]</strong></sup>.
+        </li>              
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+
+      <div class="paper">
+        <div class="paper-title">
+          <span class="paper-index">[1]</span>A Jam-Absorption Driving Strategy for Mitigating Traffic Oscillations
+        </div>
+        <div class="paper-meta">
+          <strong>Zhengbing He</strong>, Liang Zheng, Liying Song, Ning Zhu · IEEE Transactions on Intelligent Transportation Systems · 18(4):802-813 · 2017
+        </div>
+        <div class="paper-links">
+          <a href="https://doi.org/10.1109/TITS.2016.2587699">Link</a>
+          <button onclick="copyText(bibtexHe2017JamAbsorption)">Copy BibTeX</button>
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          <span class="paper-index">[2]</span>A Review of Stop-and-Go Traffic Wave Suppression Strategies: Variable Speed Limit Versus Jam-Absorption Driving
+        </div>
+        <div class="paper-meta">
+          <strong>Zhengbing He*</strong>, Jorge A. Laval, Yu Han, Andreas Hegyi, Ryosuke Nishi, Cathy Wu · IEEE Transactions on Intelligent Transportation Systems · 27(5):4986-5000 · 2026
+        </div>
+        <div class="paper-links">
+          <a href="https://doi.org/10.1109/TITS.2026.3658644">Link</a>
+          <button onclick="copyText(bibtexHe2026Review)">Copy BibTeX</button>
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          <span class="paper-index">[3]</span>Transforming Police-Car Swerving for Mitigating Isolated Stop-and-Go Traffic Waves: A Practice-Oriented Jam-Absorption Driving Strategy
+        </div>
+        <div class="paper-meta">
+          <strong>Zhengbing He*</strong> · arXiv:2602.10234 · 2026
+        </div>
+        <div class="paper-links">
+          <a href="https://arxiv.org/abs/2602.10234">Link</a>
+          <button onclick="copyText(bibtexHe2026PoliceCar)">Copy BibTeX</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Real-World Observation: Police-Car Swerving Across Freeway <span class="heading-links">[<a href="https://www.youtube.com/watch?v=_IvmWaSDorg" target="_blank" rel="noopener noreferrer">YouTube</a>] [<a href="https://www.bilibili.com/video/BV1LucVzmExH?t=10.1" target="_blank" rel="noopener noreferrer">BiliBili</a>]</span></h2>
+      <video class="feature-video" autoplay muted loop playsinline controls preload="metadata">
+        <source src="videos/Cop-Car-Swerving-across-Freeway.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <footer>
+      © 2026 Zhengbing He
+    </footer>
+  </main>
+
+  <script>
+    const bibtexHe2017JamAbsorption = `@article{he2017jam,
+  title = {A Jam-Absorption Driving Strategy for Mitigating Traffic Oscillations},
+  author = {He, Zhengbing and Zheng, Liang and Song, Liying and Zhu, Ning},
+  journal = {IEEE Transactions on Intelligent Transportation Systems},
+  volume = {18},
+  number = {4},
+  pages = {802--813},
+  year = {2017},
+  doi = {10.1109/TITS.2016.2587699}
+}`;
+
+    const bibtexHe2026Review = `@article{he2026review,
+  title = {A Review of Stop-and-Go Traffic Wave Suppression Strategies: Variable Speed Limit Versus Jam-Absorption Driving},
+  author = {He, Zhengbing and Laval, Jorge A. and Han, Yu and Hegyi, Andreas and Nishi, Ryosuke and Wu, Cathy},
+  journal = {IEEE Transactions on Intelligent Transportation Systems},
+  volume = {27},
+  number = {5},
+  pages = {4986--5000},
+  year = {2026},
+  doi = {10.1109/TITS.2026.3658644}
+}`;
+
+    const bibtexHe2026PoliceCar = `@misc{he2026policecar,
+  title = {Transforming Police-Car Swerving for Mitigating Isolated Stop-and-Go Traffic Waves: A Practice-Oriented Jam-Absorption Driving Strategy},
+  author = {He, Zhengbing},
+  year = {2026},
+  eprint = {2602.10234},
+  archivePrefix = {arXiv},
+  primaryClass = {physics.soc-ph},
+  url = {https://arxiv.org/abs/2602.10234}
+}`;
+
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("BibTeX copied to clipboard.");
+      });
+    }
+  </script>
+</body>
+</html>
