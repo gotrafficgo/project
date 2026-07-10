@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Resolving Traffic Congestion with Connected Vehicles | Zhengbing He</title>
+  <meta
+    name="description"
+    content="Project page for Zhengbing He's research on using connected vehicles, cooperative driving strategies, and stability analysis to suppress traffic oscillations and improve heterogeneous traffic flow."
+  />
+
+  <link rel="stylesheet" href="../styles/common.css" />
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <a class="back-link" href="https://www.GoTrafficGo.com">← Back to main page</a>
+      <h1>Resolving Traffic Congestion with Connected Vehicles</h1>
+    </header>
+
+    <section>
+      <h2>Overview</h2>
+
+      <p>
+        As connected and regular vehicles will coexist for the foreseeable future, understanding and controlling heterogeneous traffic flow is essential.
+        <strong class="emphasis">The central question of this research is how connected vehicles can stabilize the entire traffic stream.</strong>
+        Addressing this question requires understanding how disturbances propagate through interactions among different vehicle types,
+        how connectivity and vehicle distribution affect this propagation,
+        and how shared local or global information can be translated into effective driving actions.
+      </p>
+
+      <figure class="overview-highlight">
+        <img src="images/connected-vehicles-overview.png" alt="Connected vehicles stabilize heterogeneous traffic through cooperation and feedback control" decoding="async" />
+      </figure>
+
+      <p>
+        Our work addresses this challenge through three complementary advances in mixed-traffic modeling, cooperative control, and stability analysis:
+      </p>
+
+      <ul class="work-list">
+        <li>
+          We <strong class="emphasis">developed a unified car-following framework</strong> to reveal how the penetration rate and spatial distribution of connected vehicles affect mixed-traffic stability,
+          together with a <strong class="emphasis">distributed feedback control strategy</strong> that enables connected vehicles to stabilize traffic and improve traffic efficiency<sup class="citation-sup"><strong>[1]</strong></sup>.
+        </li>
+        <li>
+          We <strong class="emphasis">proposed local and global cooperative driving strategies</strong> that use shared vehicle information to suppress traffic oscillations and improve traffic efficiency<sup class="citation-sup"><strong>[2]</strong></sup>.
+        </li>
+        <li>
+          We <strong class="emphasis">established a generalized string-stability framework</strong> and derived control conditions that prevent disturbances from amplifying along connected vehicle strings<sup class="citation-sup"><strong>[3]</strong></sup>.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+
+      <div class="paper featured-paper">
+        <figure>
+          <img
+            src="images/heterogeneous-traffic.png"
+            alt="Heterogeneous traffic mixing regular and connected vehicles"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+        <div class="featured-paper-content">
+          <div class="paper-title">
+            <span class="paper-index">[1]</span>Heterogeneous Traffic Mixing Regular and Connected Vehicles: Modeling and Stabilization
+          </div>
+          <div class="paper-meta">
+            Dong-Fan Xie, Xiao-Mei Zhao, <strong>Zhengbing He*</strong> · IEEE Transactions on Intelligent Transportation Systems · 20(6):2060–2071 · 2019
+          </div>
+          <div class="paper-links">
+            <a href="https://doi.org/10.1109/TITS.2018.2857465" target="_blank" rel="noopener noreferrer">Link</a>
+            <button onclick="copyText(bibtexXie2019)">Copy BibTeX</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper featured-paper">
+        <figure>
+          <img
+            src="images/cooperative-driving.png"
+            alt="Cooperative driving strategies of connected vehicles for stabilizing traffic flow"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+        <div class="featured-paper-content">
+          <div class="paper-title">
+            <span class="paper-index">[2]</span>Cooperative Driving Strategies of Connected Vehicles for Stabilizing Traffic Flow
+          </div>
+          <div class="paper-meta">
+            Dong-Fan Xie, Yong-Qi Wen, Xiao-Mei Zhao, Xin-Gang Li, <strong>Zhengbing He*</strong> · Transportmetrica B: Transport Dynamics · 8(1):166–181 · 2020
+          </div>
+          <div class="paper-links">
+            <a href="https://doi.org/10.1080/21680566.2020.1728590" target="_blank" rel="noopener noreferrer">Link</a>
+            <button onclick="copyText(bibtexXie2020)">Copy BibTeX</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper featured-paper">
+        <figure>
+          <img
+            src="images/string-stability.png"
+            alt="String stability analysis of connected vehicular systems"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+        <div class="featured-paper-content">
+          <div class="paper-title">
+            <span class="paper-index">[3]</span>String Stability Analysis of Connected Vehicular Systems Based on Car-Following Model
+          </div>
+          <div class="paper-meta">
+            Shuqing Li, Yanyan Qin, <strong>Zhengbing He*</strong> · Journal of Transportation Engineering, Part A: Systems · 147(8):04021038 · 2021
+          </div>
+          <div class="paper-links">
+            <a href="https://doi.org/10.1061/JTEPBS.0000551" target="_blank" rel="noopener noreferrer">Link</a>
+            <button onclick="copyText(bibtexLi2021)">Copy BibTeX</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 Zhengbing He
+    </footer>
+  </main>
+
+  <script>
+    const bibtexXie2019 = `@article{xie2019heterogeneous,
+  title = {Heterogeneous traffic mixing regular and connected vehicles: Modeling and stabilization},
+  author = {Xie, Dong-Fan and Zhao, Xiao-Mei and He, Zhengbing},
+  journal = {IEEE Transactions on Intelligent Transportation Systems},
+  volume = {20},
+  number = {6},
+  pages = {2060--2071},
+  year = {2019},
+  doi = {10.1109/TITS.2018.2857465}
+}`;
+
+    const bibtexXie2020 = `@article{xie2020cooperative,
+  title = {Cooperative driving strategies of connected vehicles for stabilizing traffic flow},
+  author = {Xie, Dong-Fan and Wen, Yong-Qi and Zhao, Xiao-Mei and Li, Xin-Gang and He, Zhengbing},
+  journal = {Transportmetrica B: Transport Dynamics},
+  volume = {8},
+  number = {1},
+  pages = {166--181},
+  year = {2020},
+  doi = {10.1080/21680566.2020.1728590}
+}`;
+
+    const bibtexLi2021 = `@article{li2021string,
+  title = {String stability analysis of connected vehicular systems based on car-following model},
+  author = {Li, Shuqing and Qin, Yanyan and He, Zhengbing},
+  journal = {Journal of Transportation Engineering, Part A: Systems},
+  volume = {147},
+  number = {8},
+  pages = {04021038},
+  year = {2021},
+  doi = {10.1061/JTEPBS.0000551}
+}`;
+
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("BibTeX copied to clipboard.");
+      });
+    }
+  </script>
+</body>
+</html>

@@ -10,173 +10,7 @@
     content="Project page for Zhengbing He's pioneering work on AI-driven vehicle dynamics modeling, including data-driven car-following and deep-learning-based lane-changing models for driver behavior and traffic dynamics."
   />
 
-  <style>
-    :root {
-      --text: #222;
-      --muted: #666;
-      --background: #f7f7f7;
-      --card: #ffffff;
-      --border: #eaeaea;
-      --link: #0969da;
-      --shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background: var(--background);
-    }
-
-    .container {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 48px 20px;
-    }
-
-    header {
-      margin-bottom: 36px;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      color: var(--link);
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      font-size: 2.3rem;
-      line-height: 1.2;
-      margin: 0;
-    }
-
-    section {
-      background: var(--card);
-      padding: 28px;
-      margin-bottom: 24px;
-      border-radius: 14px;
-      box-shadow: var(--shadow);
-    }
-
-    h2 {
-      margin-top: 0;
-      font-size: 1.35rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 8px;
-    }
-
-    p {
-      margin-top: 0;
-    }
-
-    .emphasis {
-      color: #8b0000;
-    }
-
-    .citation-link {
-      color: #5aa9e6;
-    }
-
-    .media-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    figure {
-      margin: 0;
-    }
-
-    .media-grid img {
-      width: 100%;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: #fff;
-      display: block;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    }
-
-    figcaption {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .paper {
-      margin-bottom: 20px;
-    }
-
-    .paper:last-child {
-      margin-bottom: 0;
-    }
-
-    .paper-title {
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .paper-meta {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 6px;
-    }
-
-    .paper-links a,
-    .paper-links button {
-      display: inline-block;
-      margin-right: 14px;
-      margin-bottom: 8px;
-      color: var(--link);
-      background: none;
-      border: none;
-      padding: 0;
-      font: inherit;
-      font-weight: 500;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .paper-links a:hover,
-    .paper-links button:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      color: #777;
-      margin-top: 36px;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 32px 16px;
-      }
-
-      section {
-        padding: 22px;
-      }
-
-      h1 {
-        font-size: 1.9rem;
-      }
-
-      .media-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../styles/common.css" />
 </head>
 
 <body>
@@ -203,15 +37,15 @@
         by review articles published by scholars from institutions such as
         the University of California, Berkeley (<a class="citation-link" href="https://ieeexplore.ieee.org/document/10547481">Zhang et al., 2025</a>),
         the University of Washington (<a class="citation-link" href="https://www.nature.com/articles/s41597-023-02718-7">Chen et al., 2023</a>),
-        Imperial College London (<a class="citation-link" href="https://doi.org/10.1016/j.commtr.2025.100164">Rowam et al., 2025</a>),
-        Tshinghua Univeristy (<a class="citation-link" href="https://doi.org/10.1016/j.trc.2026.105840">Xie et al., 2026</a>)
+        Imperial College London (<a class="citation-link" href="https://doi.org/10.1016/j.commtr.2025.100164" target="_blank" rel="noopener noreferrer">Rowam et al., 2025</a>),
+        Tshinghua Univeristy (<a class="citation-link" href="https://doi.org/10.1016/j.trc.2026.105840" target="_blank" rel="noopener noreferrer">Xie et al., 2026</a>)
       </p>
 
       <p>
         In 2019, my team developed <strong class="emphasis">the first deep-learning-based lane-changing model</strong> using DBN
         and LSTM neural networks, which has since been <strong class="emphasis">cited over 300 times</strong> and is widely recognized
         in subsequent research (<a class="citation-link" href="https://ieeexplore.ieee.org/document/9954276">Siebke et al., 2023</a>;
-        <a class="citation-link" href="https://doi.org/10.1016/j.trc.2024.104841">Han et al., 2024</a>;
+        <a class="citation-link" href="https://doi.org/10.1016/j.trc.2024.104841" target="_blank" rel="noopener noreferrer">Han et al., 2024</a>;
         <a class="citation-link" href="https://ieeexplore.ieee.org/document/10321740">Wang et al., 2024</a>;
         <a class="citation-link" href="https://ieeexplore.ieee.org/document/10855350">Huang et al., 2025</a>
         ) as a pioneering contribution to AI-driven modeling of driver behavior
@@ -285,7 +119,7 @@
           <strong>Zhengbing He</strong>, Liang Zheng, Wei Guan · Transportation Research Part B: Methodological · 80:185–201 · 2015
         </div>
         <div class="paper-links">
-          <a href="https://doi.org/10.1016/j.trb.2015.07.010">Link</a>
+          <a href="https://doi.org/10.1016/j.trb.2015.07.010" target="_blank" rel="noopener noreferrer">Link</a>
           <button onclick="copyText(bibtexHe2015)">Copy BibTeX</button>
         </div>
       </div>
@@ -298,7 +132,7 @@
           Yang Yu, <strong>Zhengbing He</strong>, Xiaobo Qu · IEEE Transactions on Cybernetics · 53(3):1405–1418 · 2023
         </div>
         <div class="paper-links">
-          <a href="https://doi.org/10.1109/TCYB.2021.3095154">Link</a>
+          <a href="https://doi.org/10.1109/TCYB.2021.3095154" target="_blank" rel="noopener noreferrer">Link</a>
           <button onclick="copyText(bibtexYu2023)">Copy BibTeX</button>
         </div>
       </div>
@@ -311,7 +145,7 @@
           Dong-Fan Xie, Zhe-Zhe Fang, Bin Jia, <strong>Zhengbing He*</strong> · Transportation Research Part C: Emerging Technologies · 106:41–60 · 2019
         </div>
         <div class="paper-links">
-          <a href="https://doi.org/10.1016/j.trc.2019.07.002">Link</a>
+          <a href="https://doi.org/10.1016/j.trc.2019.07.002" target="_blank" rel="noopener noreferrer">Link</a>
           <button onclick="copyText(bibtexXie2019)">Copy BibTeX</button>
         </div>
       </div>
