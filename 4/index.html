@@ -79,7 +79,7 @@
       </figure>
 
       <p>
-        Our work addresses this challenge through three complementary advances in mixed-traffic modeling, cooperative control, and stability analysis:
+        Our work addresses this challenge through four complementary advances in mixed-traffic modeling, cooperative control, stability analysis, and learning-based platooning:
       </p>
 
       <ul class="work-list">
@@ -92,6 +92,9 @@
         </li>
         <li>
           We <strong class="emphasis">established a generalized string-stability framework</strong> and derived control conditions that prevent disturbances from amplifying along connected vehicle strings<sup class="citation-sup"><strong>[3]</strong></sup>.
+        </li>
+        <li>
+          We recently <strong class="emphasis">extended connected-vehicle cooperation to hybrid platooning</strong> by developing a deep reinforcement learning strategy that dynamically balances platoon structure, traffic throughput, and disturbance suppression in traffic composed of connected, autonomous, and human-driven vehicles<sup class="citation-sup"><strong>[4]</strong></sup>.
         </li>
       </ul>
     </section>
@@ -168,6 +171,29 @@
         </div>
       </div>
 
+      <div class="paper featured-paper">
+        <figure>
+          <img
+            src="images/platooning.png"
+            alt="Platooning connected, autonomous, and human-driven vehicles with deep reinforcement learning"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+        <div class="featured-paper-content">
+          <div class="paper-title">
+            <span class="paper-index">[4]</span>Platooning Connected, Autonomous, and Human-Driven Vehicles: A Deep Reinforcement Learning-based Approach
+          </div>
+          <div class="paper-meta">
+            Zhen Qin, Dong-Fan Xie, Heng Ma, Xiaomei Zhao, <strong>Zhengbing He*</strong> · arXiv:2606.20648 · 2026
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2606.20648" target="_blank" rel="noopener noreferrer">Link</a>
+            <button onclick="copyText(bibtexQina2026)">Copy BibTeX</button>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <footer>
@@ -207,6 +233,17 @@
   pages = {04021038},
   year = {2021},
   doi = {10.1061/JTEPBS.0000551}
+}`;
+
+    const bibtexQina2026 = `@misc{qina2026platooning,
+  title = {Platooning Connected, Autonomous, and Human-Driven Vehicles: A Deep Reinforcement Learning-based Approach},
+  author = {Qina, Zhen and Xie, Dong-Fan and Ma, Heng and Zhao, Xiaomei and He, Zhengbing},
+  year = {2026},
+  eprint = {2606.20648},
+  archivePrefix = {arXiv},
+  primaryClass = {eess.SY},
+  doi = {10.48550/arXiv.2606.20648},
+  url = {https://arxiv.org/abs/2606.20648}
 }`;
 
     function copyText(text) {
